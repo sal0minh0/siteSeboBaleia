@@ -1,6 +1,6 @@
 <div align="center">
 
-# siteSeboBaleia
+# Site Sebo Baleia
 
 Um site simples para ajudar na divulgação dos livros da Livraria Sebo Baleia 
 
