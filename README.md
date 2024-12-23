@@ -1,2 +1,7 @@
+<div align="center">
+
 # siteSeboBaleia
-Uma landing page para a Livraria Sebo Baleia
+
+Um site simples para ajudar na divulgação dos livros da Livraria Sebo Baleia 
+
+</div>
