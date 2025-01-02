@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    background-color: #A68D85;
+    opacity: 1;
+    background-image:  radial-gradient(#F2E2CE 2px, transparent 2px), radial-gradient(#F2E2CE 2px, #A68D85 2px);
+    background-size: 80px 80px;
+    background-position: 0 0,40px 40px;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 30px;
+}
+
+.cabecalho-imagem {
+    border-radius: 1%;
+}
+
+.cabecalho-menu {
+    display: flex;
+    gap: 30px;  
+    font-size: 130%;
+    font-family: "M PLUS Rounded 1c", serif;
+    font-weight: 400;
+    font-style: normal;
+}
