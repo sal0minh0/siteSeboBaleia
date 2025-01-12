@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap');
 
 * {
     margin: 0;
@@ -21,7 +22,7 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    padding-bottom: 30px;
+    padding-bottom: 0px;
 }
 
 .cabecalho-imagem {
@@ -30,9 +31,109 @@ body {
 
 .cabecalho-menu {
     display: flex;
-    gap: 30px;  
-    font-size: 130%;
+    gap: 30px; 
     font-family: "M PLUS Rounded 1c", serif;
     font-weight: 400;
     font-style: normal;
+    font-size: 130%;
 }
+
+.conteudo {
+    margin-bottom: 40px;
+    border-top: 0.4px solid #F2E2CE;
+}
+
+.conteudo-principal {
+    margin-top: 55px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudo-principal-escrito {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.conteudo-principal-escrito-titulo {
+    font-family: "M PLUS Rounded 1c", serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 150%;
+}
+
+.conteudo-principal-escrito-subtitulo {
+    font-family: "M PLUS Rounded 1c", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 150%;
+}
+
+.conteudo-principal-escrito-botao {
+    background-color: #F2E2CE;
+    width: 35vh;
+    height: 8vh;
+    border: none;
+    border-radius: 2.5vh;
+    box-shadow: 4px 5px 4px 2px rgba(0, 0, 0, 0.692);
+
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 85%
+}
+
+.conteudo-principal-escrito-botao:hover {
+    background-color: rgba(0, 0, 0, 0.041);
+    color: rgba(255, 255, 255, 0.904);
+    cursor: pointer;
+}
+
+.conteudo-principal-escrito-imagem{
+    box-shadow: 5px 6px 5px .3em rgba(0, 0, 0, 0.5);
+}
+
+.conteudo-secundario {
+    margin: 100px auto 122px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.conteudo-secundario-titulo {
+    border-top: 0.4px solid #F2E2CE;
+    padding-top: 35px;
+
+    font-family: "M PLUS Rounded 1c", serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 150%;
+}
+
+.conteudo-secundario-paragrafo {
+    font-family: "M PLUS Rounded 1c", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 150%;
+}
+
+.rodape {
+    border-top: 0.4px solid #F2E2CE;
+    padding: 10px 0px 6px 8px;
+}
+
+.rodape-descricao {
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 87%
+}
+
+/*41:04min parei o vídeo da rafa*/
+/* estudar esse codigo css e o html tbm*/
