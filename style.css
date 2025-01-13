@@ -151,15 +151,19 @@ body {
   font-size: 87%;
 }
 
+/* Menu para celulares*/
+
 .cabecalho-menu-responsivo {
-  display: none;
   background-color: #0000008c;
   backdrop-filter: blur(3px);
   position: absolute;
   top: 145px;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 0;
+  visibility: hidden;
+  transition: 1s;
+  overflow: hidden;
 }
 
 .cabecalho-menu-responsivo a {
@@ -181,6 +185,8 @@ body {
   border-radius: 2vh;
 }
 
+/* Botão responsivo */
+
 #botao-menu-toggle-responsivo {
   margin-right: 11px;
   width: 45px;
@@ -188,6 +194,7 @@ body {
   border: none;
   background: transparent;
   cursor: pointer;
+  display: none;
 }
 
 .linha {
@@ -197,11 +204,21 @@ body {
   display: block;
   margin: 10px auto;
   transform-origin: center;
+  transition: 0.2s;
 }
 
-#botao-menu-toggle-responsivo.ativar-botao .linha:nth-child(1) {
-  transform: translateY(36px) rotate(-45deg);
-  background-color: red;
+#botao-menu-toggle-responsivo.ativo .linha:nth-child(1) {
+  transform: translateY(14px) rotate(-45deg);
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+#botao-menu-toggle-responsivo.ativo .linha:nth-child(3){
+  transform: translateY(-14px) rotate(45deg);
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+#botao-menu-toggle-responsivo.ativo .linha:nth-child(2){
+  width: 0;
 }
 
 /* Tudo só será aplicado em diante, se for menor que 910px */
@@ -245,6 +262,15 @@ body {
   .cabecalho-menu {
     display: none;
   }
+
+  .cabecalho-menu-responsivo.abrir {
+    visibility: visible;
+    height: calc(100vh - 77px);
+  }
+
+  #botao-menu-toggle-responsivo {
+    display: block;
+  } 
 }
 
 /* parei no minuto 13:28 -> VIDEO MENU TOGGLE*/

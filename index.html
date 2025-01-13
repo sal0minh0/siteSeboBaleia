@@ -45,13 +45,13 @@
           <a class="cabecalho-menu-item" href="#">COMO CHEGAR?</a>
       </nav>
 
-      <button id="botao-menu-toggle-responsivo" onclick="animarBotao()">
+      <button id="botao-menu-toggle-responsivo" onclick="animarMenu()">
         <span class="linha"></span>
         <span class="linha"></span>
         <span class="linha"></span>
       </button>
 
-      <nav class="cabecalho-menu-responsivo">
+      <nav class="cabecalho-menu-responsivo" id="menu-responsivo">
         <a class="cabecalho-menu-item" href="#">HOME</a>
         <a class="cabecalho-menu-item" href="#">SOBRE</a>
         <a class="cabecalho-menu-item" href="#">ESTANTE VIRTUAL</a>
@@ -102,12 +102,9 @@
         <h4 class="rodape-descricao">Sebo Baleia - Copyright © "Ano XX-XX"</h4>
     </footer>
 
-    <script>
-      function animarBotao() {
-      const botao = document.getElementById('botao-menu-toggle-responsivo') 
-      botao.classList.toggle('ativar-botao')
-    }
-    </script>
+    <!-- Ativar o botao -->
+    <script src="animar.js"></script>
+    
   </body>
   <!--Fim do Body-->
 </html>
