@@ -39,6 +39,11 @@ body {
   font-size: 130%;
 }
 
+.cabecalho-menu-item {
+  text-decoration: none;
+  color: #000000;
+}
+
 .conteudo {
   margin-bottom: 40px;
   border-top: 0.4px solid #f2e2ce;
@@ -80,12 +85,12 @@ body {
   font-size: 150%;
 }
 
-
 .conteudo-principal-escrito-botao {
+  margin-left: 50px;
   background-color: #f2e2ce;
   width: 30vh;
   height: 10vh;
-  border: solid   rgba(255, 255, 255, 0.192);;
+  border: solid rgba(255, 255, 255, 0.192);
   border-radius: 50px;
   box-shadow: 4px 5px 4px 2px rgba(0, 0, 0, 0.692);
 
@@ -146,10 +151,62 @@ body {
   font-size: 87%;
 }
 
+.cabecalho-menu-responsivo {
+  display: none;
+  background-color: #0000008c;
+  backdrop-filter: blur(3px);
+  position: absolute;
+  top: 145px;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.cabecalho-menu-responsivo a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 20px 30px;
+  font-size: 16pt;
+
+  font-family: "M PLUS Rounded 1c", serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 170%;
+}
+
+.cabecalho-menu-responsivo a:hover {
+  background-color: #00000080;
+  width: 100%;
+  border-radius: 2vh;
+}
+
+#botao-menu-toggle-responsivo {
+  margin-right: 11px;
+  width: 45px;
+  height: 45px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.linha {
+  width: 45px;
+  height: 4px;
+  background-color: #f2e2ceea;
+  display: block;
+  margin: 10px auto;
+  transform-origin: center;
+}
+
+#botao-menu-toggle-responsivo.ativar-botao .linha:nth-child(1) {
+  transform: translateY(36px) rotate(-45deg);
+  background-color: red;
+}
+
 /* Tudo só será aplicado em diante, se for menor que 910px */
 
 @media screen and (max-width: 910px) {
-
   /*Classes Principais*/
   .conteudo-principal {
     flex-direction: column;
@@ -167,13 +224,22 @@ body {
 
   .conteudo-principal-escrito-imagem {
     order: 1;
-}
+  }
 
-.conteudo-principal-escrito-botao {
+  .conteudo-principal-escrito-botao {
+    margin-right: 50px;
     margin-top: 70px;
     order: 2;
-    font-size: 120%
-}
+    font-size: 120%;
+  }
+
+  .conteudo-principal-escrito {
+    margin-right: 3.5vh;
+    font-family: "M PLUS Rounded 1c", serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 120%;
+  }
 
   /*Cabeçalho*/
   .cabecalho-menu {
@@ -181,18 +247,8 @@ body {
   }
 }
 
-.conteudo-principal-escrito {
-  margin-right: 3.5vh;
-  font-family: "M PLUS Rounded 1c", serif;
-  font-weight: 900;
-  font-style: normal;
-  font-size: 120%
-}
-
-
-
-
-/* parei no minuto 7:12 */
+/* parei no minuto 13:28 -> VIDEO MENU TOGGLE*/
+/* parei no minuto 12:27 -> VIDEO MENU ANIMACAO FAZER 1°*/
 
 /* estudar esse codigo css e o html tbm*/
 

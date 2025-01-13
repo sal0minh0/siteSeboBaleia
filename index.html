@@ -38,12 +38,26 @@
       alt="Logo do Sebo">
 
       <nav class="cabecalho-menu">
-          <a class="cabecalho-menu-item">Home</a>
-          <a class="cabecalho-menu-item">Sobre</a>
-          <a class="cabecalho-menu-item">Estante Virtual</a>
-          <a class="cabecalho-menu-item">Contato</a>
-          <a class="cabecalho-menu-item">Como Chegar?</a>
+          <a class="cabecalho-menu-item" href="#">HOME</a>
+          <a class="cabecalho-menu-item" href="#">SOBRE</a>
+          <a class="cabecalho-menu-item" href="#">ESTANTE VIRTUAL</a>
+          <a class="cabecalho-menu-item" href="#">CONTATO</a>
+          <a class="cabecalho-menu-item" href="#">COMO CHEGAR?</a>
       </nav>
+
+      <button id="botao-menu-toggle-responsivo" onclick="animarBotao()">
+        <span class="linha"></span>
+        <span class="linha"></span>
+        <span class="linha"></span>
+      </button>
+
+      <nav class="cabecalho-menu-responsivo">
+        <a class="cabecalho-menu-item" href="#">HOME</a>
+        <a class="cabecalho-menu-item" href="#">SOBRE</a>
+        <a class="cabecalho-menu-item" href="#">ESTANTE VIRTUAL</a>
+        <a class="cabecalho-menu-item" href="#">CONTATO</a>
+        <a class="cabecalho-menu-item" href="#">COMO CHEGAR?</a>
+    </nav>
 
     </header>
 
@@ -87,7 +101,13 @@
     <footer class="rodape">
         <h4 class="rodape-descricao">Sebo Baleia - Copyright © "Ano XX-XX"</h4>
     </footer>
-  </body>
 
+    <script>
+      function animarBotao() {
+      const botao = document.getElementById('botao-menu-toggle-responsivo') 
+      botao.classList.toggle('ativar-botao')
+    }
+    </script>
+  </body>
   <!--Fim do Body-->
 </html>
