@@ -1,139 +1,198 @@
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 
 body {
-    font-size: 100%;
-    background-color: #A68D85;
-    opacity: 1;
-    background-image:  radial-gradient(#F2E2CE 2px, transparent 2px), radial-gradient(#F2E2CE 2px, #A68D85 2px);
-    background-size: 80px 80px;
-    background-position: 0 0,40px 40px;
+  font-size: 100%;
+  background-color: #a68d85;
+  opacity: 1;
+  background-image: radial-gradient(#f2e2ce 2px, transparent 2px),
+    radial-gradient(#f2e2ce 2px, #a68d85 2px);
+  background-size: 80px 80px;
+  background-position: 0 0, 40px 40px;
 }
 
 .cabecalho {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    padding-bottom: 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 0px;
 }
 
 .cabecalho-imagem {
-    border-radius: 1%;
+  border-radius: 1%;
 }
 
 .cabecalho-menu {
-    display: flex;
-    gap: 30px; 
-    font-family: "M PLUS Rounded 1c", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 130%;
+  display: flex;
+  gap: 30px;
+  font-family: "M PLUS Rounded 1c", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 130%;
 }
 
 .conteudo {
-    margin-bottom: 40px;
-    border-top: 0.4px solid #F2E2CE;
+  margin-bottom: 40px;
+  border-top: 0.4px solid #f2e2ce;
 }
 
 .conteudo-principal {
-    margin-top: 55px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
+  margin-top: 55px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .conteudo-principal-escrito {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  margin-left: 3vh;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
 
+.conteudo-principal-img-botao {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 80px;
 }
 
 .conteudo-principal-escrito-titulo {
-    font-family: "M PLUS Rounded 1c", serif;
-    font-weight: 800;
-    font-style: normal;
-    font-size: 150%;
+  font-family: "M PLUS Rounded 1c", serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 150%;
 }
 
 .conteudo-principal-escrito-subtitulo {
-    font-family: "M PLUS Rounded 1c", serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 150%;
+  font-family: "M PLUS Rounded 1c", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 150%;
 }
 
-.conteudo-principal-escrito-botao {
-    background-color: #F2E2CE;
-    width: 35vh;
-    height: 8vh;
-    border: none;
-    border-radius: 2.5vh;
-    box-shadow: 4px 5px 4px 2px rgba(0, 0, 0, 0.692);
 
-    font-family: "Inter", serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 85%
+.conteudo-principal-escrito-botao {
+  background-color: #f2e2ce;
+  width: 30vh;
+  height: 10vh;
+  border: solid   rgba(255, 255, 255, 0.192);;
+  border-radius: 50px;
+  box-shadow: 4px 5px 4px 2px rgba(0, 0, 0, 0.692);
+
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 98%;
 }
 
 .conteudo-principal-escrito-botao:hover {
-    background-color: rgba(0, 0, 0, 0.041);
-    color: rgba(255, 255, 255, 0.904);
-    cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.041);
+  color: rgba(255, 255, 255, 0.904);
+  cursor: pointer;
 }
 
-.conteudo-principal-escrito-imagem{
-    box-shadow: 5px 6px 5px .3em rgba(0, 0, 0, 0.5);
+.conteudo-principal-escrito-imagem {
+  display: flex;
+  flex-direction: row;
+  box-shadow: 5px 6px 5px 0.3em rgba(0, 0, 0, 0.5);
 }
 
 .conteudo-secundario {
-    margin: 100px auto 122px;
+  margin: 100px auto 122px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.conteudo-secundario-titulo {
+  border-top: 0.4px solid #f2e2ce;
+  padding-top: 35px;
+
+  font-family: "M PLUS Rounded 1c", serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 150%;
+}
+
+.conteudo-secundario-paragrafo {
+  font-family: "M PLUS Rounded 1c", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 150%;
+}
+
+.rodape {
+  border-top: 0.4px solid #f2e2ce;
+  padding: 10px 0px 6px 8px;
+}
+
+.rodape-descricao {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 87%;
+}
+
+/* Tudo só será aplicado em diante, se for menor que 910px */
+
+@media screen and (max-width: 910px) {
+
+  /*Classes Principais*/
+  .conteudo-principal {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .conteudo-principal-img-botao {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
+  }
+
+  .conteudo-principal-escrito-imagem {
+    order: 1;
 }
 
-.conteudo-secundario-titulo {
-    border-top: 0.4px solid #F2E2CE;
-    padding-top: 35px;
-
-    font-family: "M PLUS Rounded 1c", serif;
-    font-weight: 900;
-    font-style: normal;
-    font-size: 150%;
+.conteudo-principal-escrito-botao {
+    margin-top: 70px;
+    order: 2;
+    font-size: 120%
 }
 
-.conteudo-secundario-paragrafo {
-    font-family: "M PLUS Rounded 1c", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 150%;
+  /*Cabeçalho*/
+  .cabecalho-menu {
+    display: none;
+  }
 }
 
-.rodape {
-    border-top: 0.4px solid #F2E2CE;
-    padding: 10px 0px 6px 8px;
+.conteudo-principal-escrito {
+  margin-right: 3.5vh;
+  font-family: "M PLUS Rounded 1c", serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 120%
 }
 
-.rodape-descricao {
-    font-family: "Inter", serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 87%
-}
+
+
+
+/* parei no minuto 7:12 */
 
 /* estudar esse codigo css e o html tbm*/
 
