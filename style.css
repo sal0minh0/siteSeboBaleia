@@ -276,6 +276,11 @@ body {
   font-size: 140%;
   }
 
+  .cabecalho-imagem {
+    width: fit-content;
+    height: auto;
+  }
+
 }
 
 /* parei no minuto 13:28 -> VIDEO MENU TOGGLE*/
