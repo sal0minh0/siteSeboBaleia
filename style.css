@@ -271,6 +271,17 @@ body {
   #botao-menu-toggle-responsivo {
     display: block;
   } 
+
+.conteudo-secundario-titulo {
+  border-top: 0.4px solid #f2e2ce;
+  padding-top: 35px;
+
+  font-family: "M PLUS Rounded 1c", serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 140%;
+  }
+
 }
 
 /* parei no minuto 13:28 -> VIDEO MENU TOGGLE*/
