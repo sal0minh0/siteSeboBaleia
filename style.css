@@ -241,12 +241,14 @@ body {
 
   .conteudo-principal-escrito-imagem {
     order: 1;
+    width: auto;
+
   }
 
   .conteudo-principal-escrito-botao {
+    order: 2;
     margin-right: 50px;
     margin-top: 70px;
-    order: 2;
     font-size: 120%;
   }
 
@@ -276,15 +278,7 @@ body {
   font-size: 140%;
   }
 
-  .cabecalho-imagem {
-    width: fit-content;
-    height: auto;
-  }
-
 }
-
-/* parei no minuto 13:28 -> VIDEO MENU TOGGLE*/
-/* parei no minuto 12:27 -> VIDEO MENU ANIMACAO FAZER 1°*/
 
 /* estudar esse codigo css e o html tbm*/
 
