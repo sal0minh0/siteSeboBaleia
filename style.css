@@ -241,7 +241,8 @@ body {
 
   .conteudo-principal-escrito-imagem {
     order: 1;
-    width: auto;
+    width: 100%;
+    flex-direction: column;
 
   }
 
