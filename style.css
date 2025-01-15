@@ -13,7 +13,7 @@ body {
   background-color: #a68d85;
   opacity: 1;
   background-image: radial-gradient(#f2e2ce 2px, transparent 2px),
-    radial-gradient(#f2e2ce 2px, #a68d85 2px);
+  radial-gradient(#f2e2ce 2px, #a68d85 2px);
   background-size: 80px 80px;
   background-position: 0 0, 40px 40px;
 }
@@ -58,18 +58,20 @@ body {
 }
 
 .conteudo-principal-escrito {
-  margin-left: 3vh;
+  margin-left: 3.5vh;
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
 
+/*
 .conteudo-principal-img-botao {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 80px;
 }
+*/
 
 .conteudo-principal-escrito-titulo {
   font-family: "M PLUS Rounded 1c", serif;
@@ -85,6 +87,7 @@ body {
   font-size: 150%;
 }
 
+/* exemplo de Botão
 .conteudo-principal-escrito-botao {
   margin-left: 50px;
   background-color: #f2e2ce;
@@ -106,6 +109,33 @@ body {
   color: rgba(255, 255, 255, 0.904);
   cursor: pointer;
 }
+*/
+
+.localizacao {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  height: 500px;
+  background: none;
+}
+
+.localizacao h3 {
+  border-top: .4px solid #f2e2ce; 
+  padding: 18px 0 20px 0;
+  margin-left: 5px;
+  font-family: "M PLUS Rounded 1c", serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 150%;
+}
+
+.localizacao iframe { 
+  margin: auto;
+  border-radius: 20px;
+  box-shadow: 4px 5px 4px 2px rgba(0, 0, 0, 0.4);
+}
 
 .conteudo-principal-escrito-imagem {
   display: flex;
@@ -122,7 +152,7 @@ body {
 }
 
 .conteudo-secundario-titulo {
-  border-top: 0.4px solid #f2e2ce;
+  border-top: .4px solid #f2e2ce;
   padding-top: 35px;
 
   font-family: "M PLUS Rounded 1c", serif;
@@ -231,26 +261,31 @@ body {
     text-align: center;
     gap: 20px;
   }
-
+  /*
   .conteudo-principal-img-botao {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
   }
-
+*/
   .conteudo-principal-escrito-imagem {
-    order: 1;
+    /*order: 1;*/
     width: 100%;
     flex-direction: column;
-
   }
 
-  .conteudo-principal-escrito-botao {
-    order: 2;
-    margin-right: 50px;
-    margin-top: 70px;
-    font-size: 120%;
+  .localizacao h3{
+    font-size: 170%;
+    padding: 10px 0 15px 0;
+    margin-left: 2px;
+  }
+
+  /* Antes era a classe conteudo-principal-escrito-botao*/
+  .localizacao iframe{
+    /*order: 2;*/
+    width: 100%;
+    flex-direction: column;
   }
 
   .conteudo-principal-escrito {
