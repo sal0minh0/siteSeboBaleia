@@ -364,27 +364,27 @@ body {
     display: block;
   } 
 
-.conteudo-secundario-titulo {
-  font-size: 140%;
+  .conteudo-secundario-titulo {
+    font-size: 140%;
   }
 
-.conteudo-no-meio {
-  flex-wrap: wrap;
-  flex-direction: column-reverse;
-  width: 100%;
-}
+  .conteudo-no-meio {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
 
-.instagram {
-  width: 100%;
-  margin-top: 30px;
-}
+  .instagram {
+    width: 100%;
+    margin-top: 30px;
+  }
 
-.instagram iframe {
-  width: 100%;
-}
+  .instagram iframe {
+    width: 100%;
+  }
 
-.localizacao {
-  width: 100%;
+  .localizacao {
+    width: 100%;
   }
 }
 
