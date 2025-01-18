@@ -1,12 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap");
 
+/* Reset do Css */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
 }
+
+/* Fundo da página */
 
 body {
   font-size: 100%;
@@ -26,6 +30,8 @@ body {
   padding-bottom: 0px;
 }
 
+/* Cabeçalho e primeiros menus */
+
 .cabecalho-imagem {
   border-radius: 1%;
 }
@@ -43,6 +49,8 @@ body {
   text-decoration: none;
   color: #000000;
 }
+
+/* Base da Primeira parte da página */
 
 .conteudo {
   margin-bottom: 40px;
@@ -72,6 +80,8 @@ body {
   gap: 80px;
 }
 */
+
+/* Apresentação da loja */
 
 .conteudo-principal-escrito-titulo {
   font-family: "M PLUS Rounded 1c", serif;
@@ -110,21 +120,60 @@ body {
   cursor: pointer;
 }
 */
+/*AJEITAR ISSO hj 17/01*/
 
-.localizacao {
-  margin-top: 100px;
+/* Classe pai do Instagram + GMaps */
+
+.conteudo-no-meio {
+  display: flex;
+  flex-direction: row;
+  background: none;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* Instagram */
+
+.instagram {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: auto;
-  height: 500px;
+  background: none;
+}
+
+.instagram iframe {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 4px 5px 4px 2px rgba(0, 0, 0, 0.4);
+}
+
+.instagram h3 {
+  display: flex;
+  border-top: .4px solid #f2e2ce;
+  justify-self: center;
+  padding-top: 5px;
+  padding-bottom: 10px;
+
+  font-family: "M PLUS Rounded 1c", serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 150%;
+}
+
+/* Google Maps */
+
+.localizacao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background: none;
 }
 
 .localizacao h3 {
   border-top: .4px solid #f2e2ce; 
-  padding: 18px 0 20px 0;
-  margin-left: 5px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+
   font-family: "M PLUS Rounded 1c", serif;
   font-weight: 800;
   font-style: normal;
@@ -132,16 +181,19 @@ body {
 }
 
 .localizacao iframe { 
-  margin: auto;
   border-radius: 20px;
   box-shadow: 4px 5px 4px 2px rgba(0, 0, 0, 0.4);
 }
+
+/* Foto Apresentação*/
 
 .conteudo-principal-escrito-imagem {
   display: flex;
   flex-direction: row;
   box-shadow: 5px 6px 5px 0.3em rgba(0, 0, 0, 0.5);
 }
+
+/* Tipos de produtos da loja */
 
 .conteudo-secundario {
   margin: 100px auto 122px;
@@ -168,6 +220,8 @@ body {
   font-size: 150%;
 }
 
+/* Rodapé */
+
 .rodape {
   border-top: 0.4px solid #f2e2ce;
   padding: 10px 0px 6px 8px;
@@ -181,7 +235,7 @@ body {
   font-size: 87%;
 }
 
-/* Menu para celulares*/
+/* Menu para celular*/
 
 .cabecalho-menu-responsivo {
   background-color: #0000008c;
@@ -314,6 +368,24 @@ body {
   font-size: 140%;
   }
 
+.conteudo-no-meio {
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+  width: 100%;
+}
+
+.instagram {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.instagram iframe {
+  width: 100%;
+}
+
+.localizacao {
+  width: 100%;
+  }
 }
 
 /* estudar esse codigo css e o html tbm*/

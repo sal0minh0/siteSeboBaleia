@@ -11,20 +11,25 @@
     <!--Flavicon-->
 
     <title>Sebo Baleia</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="icon" href="assets/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="icon" href="assets/icon.ico" type="image/x-icon" />
 
     <!-- Preview do site -->
 
-    <meta property="og:type" content="website"/>
-    <meta property="og:title" content="Sebo Baleia"/>
-    <meta property="og:description" content="Uma livraria muito especial no meio do centro do Recife!" />
-    <meta property="og:image" content="https://sebo-baleia.vercel.app/assets/imagem-de-preview.jpg"/>
-    <meta property="locale" content="pt_BR"/>
-    <meta property="og:image:width" content="1200"/>
-    <meta property="og:image:height" content="630"/>
-    <meta property="og:url" content="https://sebo-baleia.vercel.app/"/>
-
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Sebo Baleia" />
+    <meta
+      property="og:description"
+      content="Uma livraria muito especial no meio do centro do Recife!"
+    />
+    <meta
+      property="og:image"
+      content="https://sebo-baleia.vercel.app/assets/imagem-de-preview.jpg"
+    />
+    <meta property="locale" content="pt_BR" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:url" content="https://sebo-baleia.vercel.app/" />
   </head>
 
   <!-- Fim do Head-->
@@ -32,17 +37,19 @@
   <body>
     <!--1-->
     <header class="cabecalho">
-
-      <img class="cabecalho-imagem" src="assets/logo.jpg" 
-      width="300px" 
-      alt="Logo do Sebo">
+      <img
+        class="cabecalho-imagem"
+        src="assets/logo.jpg"
+        width="300px"
+        alt="Logo do Sebo"
+      />
 
       <nav class="cabecalho-menu">
-          <a class="cabecalho-menu-item" href="#">HOME</a>
-          <a class="cabecalho-menu-item" href="#">SOBRE</a>
-          <a class="cabecalho-menu-item" href="#">ESTANTE VIRTUAL</a>
-          <a class="cabecalho-menu-item" href="#">CONTATO</a>
-          <a class="cabecalho-menu-item" href="#">COMO CHEGAR?</a>
+        <a class="cabecalho-menu-item" href="#">HOME</a>
+        <a class="cabecalho-menu-item" href="#">SOBRE</a>
+        <a class="cabecalho-menu-item" href="#">ESTANTE VIRTUAL</a>
+        <a class="cabecalho-menu-item" href="#">CONTATO</a>
+        <a class="cabecalho-menu-item" href="#">COMO CHEGAR?</a>
       </nav>
 
       <button id="botao-menu-toggle-responsivo" onclick="animarMenu()">
@@ -57,57 +64,81 @@
         <a class="cabecalho-menu-item" href="#">ESTANTE VIRTUAL</a>
         <a class="cabecalho-menu-item" href="#">CONTATO</a>
         <a class="cabecalho-menu-item" href="#">COMO CHEGAR?</a>
-    </nav>
-
+      </nav>
     </header>
 
     <!--2-->
     <main class="conteudo">
-        <section class="conteudo-principal">
+      <section class="conteudo-principal">
+        <div class="conteudo-principal-escrito">
+          <h1 class="conteudo-principal-escrito-titulo">Sebo Baleia</h1>
+          <h3 class="conteudo-principal-escrito-subtitulo">
+            Uma livraria inclusiva para todos, como se fosse um bar
+            aconchegante.
+          </h3>
+          <!--Melhorar-->
+        </div>
 
-            <div class="conteudo-principal-escrito">
-                <h1 class="conteudo-principal-escrito-titulo">Sebo Baleia</h1>
-                <h3 class="conteudo-principal-escrito-subtitulo">Uma livraria inclusiva para todos, 
-                  como se fosse um bar aconchegante.</h3> <!--Melhorar-->
-                </div>
-          
-            <img class="conteudo-principal-escrito-imagem" src="assets/apresentacao.png" 
-            width="450px" height="395px"  
-            alt="Apresentação do Sebo"> <!--Mudar se tiver outra ideia-->
-            
+        <img
+          class="conteudo-principal-escrito-imagem"
+          src="assets/apresentacao.png"
+          width="450px"
+          height="395px"
+          alt="Apresentação do Sebo"
+        />
+        <!--Mudar se tiver outra ideia-->
+      </section>
+
+      <section class="conteudo-secundario">
+        <h2 class="conteudo-secundario-titulo">
+          Quais tipos de livros vendemos?
+        </h2>
+        <!--Exemplos-->
+
+        <p class="conteudo-secundario-paragrafo">História</p>
+        <p class="conteudo-secundario-paragrafo">Filosofia</p>
+        <p class="conteudo-secundario-paragrafo">Sociologia</p>
+        <p class="conteudo-secundario-paragrafo">Cultura Pernambucana</p>
+        <p class="conteudo-secundario-paragrafo">Poemas</p>
+        <!--(...)-->
+        <!--Colocar mais se necessário-->
+      </section>
+
+      <div class="conteudo-no-meio">
+        <section class="instagram">
+          <h3>Siga-nos</h3>
+          <iframe
+            src="https://widgets.sociablekit.com/instagram-feed/iframe/25511539"
+            frameborder="0"
+            width="600px"
+            height="510px"
+          ></iframe>
         </section>
-
 
         <section class="localizacao">
           <h3>Encontre-nos</h3>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d493.8055159561692!2d-34.8898309!3d-8.0560974!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab18c1fe1d479f%3A0x8caf5511240163d3!2sSebo%20Livraria%20Baleia!5e0!3m2!1spt-BR!2sbr!4v1736948469568!5m2!1spt-BR!2sbr" 
-          width="600" height="450" style="border:0;" allowfullscreen="" 
-          loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d493.8055159561692!2d-34.8898309!3d-8.0560974!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab18c1fe1d479f%3A0x8caf5511240163d3!2sSebo%20Livraria%20Baleia!5e0!3m2!1spt-BR!2sbr!4v1736948469568!5m2!1spt-BR!2sbr"
+            width="600px"
+            height="510px"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </section>
-
-        <section class="conteudo-secundario">
-
-            <h2 class="conteudo-secundario-titulo">Quais tipos de livros vendemos?</h2> <!--Exemplos-->
-
-            <p class="conteudo-secundario-paragrafo">História</p>
-            <p class="conteudo-secundario-paragrafo">Filosofia</p>
-            <p class="conteudo-secundario-paragrafo">Sociologia</p>
-            <p class="conteudo-secundario-paragrafo">Cultura Pernambucana</p>
-            <p class="conteudo-secundario-paragrafo">Poemas</p> <!--(...)-->
-            <!--Colocar mais se necessário-->
-
-        </section>
+        
+      </div>
 
     </main>
 
     <!--3-->
     <footer class="rodape">
-        <h4 class="rodape-descricao">Sebo Baleia - Copyright © "Ano XX-XX"</h4>
+      <h4 class="rodape-descricao">Sebo Baleia - Copyright © "Ano XX-XX"</h4>
     </footer>
 
     <!-- Ativar o botao -->
     <script src="animar.js"></script>
-    
   </body>
   <!--Fim do Body-->
 </html>
