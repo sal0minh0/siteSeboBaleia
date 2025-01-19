@@ -36,20 +36,20 @@
 
   <body>
     <!--1-->
-    <header class="cabecalho">
+    <header id="cabecalho">
       <img
-        class="cabecalho-imagem"
+        id="cabecalho-imagem"
         src="assets/logo.jpg"
         width="300px"
         alt="Logo do Sebo"
       />
 
-      <nav class="cabecalho-menu">
+      <nav id="cabecalho-menu">
         <a class="cabecalho-menu-item" href="#">HOME</a>
         <a class="cabecalho-menu-item" href="#">SOBRE</a>
         <a class="cabecalho-menu-item" href="#">ESTANTE VIRTUAL</a>
         <a class="cabecalho-menu-item" href="#">CONTATO</a>
-        <a class="cabecalho-menu-item" href="#">COMO CHEGAR?</a>
+        <a class="cabecalho-menu-item" href="#">FUNCIONAMENTO</a>
       </nav>
 
       <button id="botao-menu-toggle-responsivo" onclick="animarMenu()">
@@ -58,21 +58,22 @@
         <span class="linha"></span>
       </button>
 
-      <nav class="cabecalho-menu-responsivo" id="menu-responsivo">
+      <nav id="cabecalho-menu-responsivo">
         <a class="cabecalho-menu-item" href="#">HOME</a>
         <a class="cabecalho-menu-item" href="#">SOBRE</a>
         <a class="cabecalho-menu-item" href="#">ESTANTE VIRTUAL</a>
         <a class="cabecalho-menu-item" href="#">CONTATO</a>
-        <a class="cabecalho-menu-item" href="#">COMO CHEGAR?</a>
+        <a class="cabecalho-menu-item" href="#">FUNCIONAMENTO</a>
       </nav>
     </header>
 
     <!--2-->
-    <main class="conteudo">
-      <section class="conteudo-principal">
-        <div class="conteudo-principal-escrito">
-          <h1 class="conteudo-principal-escrito-titulo">Sebo Baleia</h1>
-          <h3 class="conteudo-principal-escrito-subtitulo">
+    <main id="conteudo">
+      
+      <section id="conteudo-principal" class="esconder">
+        <div id="conteudo-principal-escrito">
+          <h1 id="conteudo-principal-escrito-titulo">Sebo Baleia</h1>
+          <h3 id="conteudo-principal-escrito-subtitulo">
             Uma livraria inclusiva para todos, como se fosse um bar
             aconchegante.
           </h3>
@@ -80,7 +81,7 @@
         </div>
 
         <img
-          class="conteudo-principal-escrito-imagem"
+          id="conteudo-principal-escrito-imagem"
           src="assets/apresentacao.png"
           width="450px"
           height="395px"
@@ -89,8 +90,8 @@
         <!--Mudar se tiver outra ideia-->
       </section>
 
-      <section class="conteudo-secundario">
-        <h2 class="conteudo-secundario-titulo">
+      <section id="conteudo-secundario" class="esconder">
+        <h2 id="conteudo-secundario-titulo">
           Quais tipos de livros vendemos?
         </h2>
         <!--Exemplos-->
@@ -104,8 +105,13 @@
         <!--Colocar mais se necessário-->
       </section>
 
-      <div class="conteudo-no-meio">
-        <section class="instagram">
+      <!--Colocar uma forma do usuário acessar a loja virtual-->
+      <div class="conteudo-terciario">
+        <section class="estante-virtual"></section>
+      </div>
+
+      <div id="conteudo-quaternario">
+        <section id="instagram" class="esconder">
           <h3>Siga-nos</h3>
           <iframe
             src="https://widgets.sociablekit.com/instagram-feed/iframe/25511539"
@@ -115,7 +121,7 @@
           ></iframe>
         </section>
 
-        <section class="localizacao">
+        <section id="localizacao" class="esconder">
           <h3>Encontre-nos</h3>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d493.8055159561692!2d-34.8898309!3d-8.0560974!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab18c1fe1d479f%3A0x8caf5511240163d3!2sSebo%20Livraria%20Baleia!5e0!3m2!1spt-BR!2sbr!4v1736948469568!5m2!1spt-BR!2sbr"
@@ -127,18 +133,18 @@
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </section>
-        
       </div>
-
     </main>
 
     <!--3-->
-    <footer class="rodape">
-      <h4 class="rodape-descricao">Sebo Baleia - Copyright © "Ano XX-XX"</h4>
+    <footer id="rodape">
+      <h4 id="rodape-descricao">Sebo Baleia - Copyright © "Ano XX-XX"</h4>
     </footer>
 
-    <!-- Ativar o botao -->
+    <!-- Ativar o botão responsivo -->
     <script src="animar.js"></script>
+    <!-- Animação de navegação da página-->
+    <script src="navegacao.js"></script>
   </body>
   <!--Fim do Body-->
 </html>

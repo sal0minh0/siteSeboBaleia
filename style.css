@@ -22,7 +22,7 @@ body {
   background-position: 0 0, 40px 40px;
 }
 
-.cabecalho {
+#cabecalho {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -32,11 +32,11 @@ body {
 
 /* Cabeçalho e primeiros menus */
 
-.cabecalho-imagem {
+#cabecalho-imagem {
   border-radius: 1%;
 }
 
-.cabecalho-menu {
+#cabecalho-menu {
   display: flex;
   gap: 30px;
   font-family: "M PLUS Rounded 1c", serif;
@@ -52,12 +52,12 @@ body {
 
 /* Base da Primeira parte da página */
 
-.conteudo {
+#conteudo {
   margin-bottom: 40px;
   border-top: 0.4px solid #f2e2ce;
 }
 
-.conteudo-principal {
+#conteudo-principal {
   margin-top: 55px;
   display: flex;
   flex-direction: row;
@@ -65,7 +65,7 @@ body {
   justify-content: space-around;
 }
 
-.conteudo-principal-escrito {
+#conteudo-principal-escrito {
   margin-left: 3.5vh;
   display: flex;
   flex-direction: column;
@@ -83,14 +83,14 @@ body {
 
 /* Apresentação da loja */
 
-.conteudo-principal-escrito-titulo {
+#conteudo-principal-escrito-titulo {
   font-family: "M PLUS Rounded 1c", serif;
   font-weight: 800;
   font-style: normal;
   font-size: 150%;
 }
 
-.conteudo-principal-escrito-subtitulo {
+#conteudo-principal-escrito-subtitulo {
   font-family: "M PLUS Rounded 1c", serif;
   font-weight: 500;
   font-style: normal;
@@ -124,7 +124,7 @@ body {
 
 /* Classe pai do Instagram + GMaps */
 
-.conteudo-no-meio {
+#conteudo-quaternario {
   display: flex;
   flex-direction: row;
   background: none;
@@ -134,20 +134,20 @@ body {
 
 /* Instagram */
 
-.instagram {
+#instagram {
   display: flex;
   flex-direction: column;
   align-items: center;
   background: none;
 }
 
-.instagram iframe {
+#instagram iframe {
   background: #fff;
   border-radius: 20px;
   box-shadow: 4px 5px 4px 2px rgba(0, 0, 0, 0.4);
 }
 
-.instagram h3 {
+#instagram h3 {
   display: flex;
   border-top: .4px solid #f2e2ce;
   justify-self: center;
@@ -162,14 +162,14 @@ body {
 
 /* Google Maps */
 
-.localizacao {
+#localizacao {
   display: flex;
   flex-direction: column;
   align-items: center;
   background: none;
 }
 
-.localizacao h3 {
+#localizacao h3 {
   border-top: .4px solid #f2e2ce; 
   padding-top: 5px;
   padding-bottom: 10px;
@@ -180,14 +180,14 @@ body {
   font-size: 150%;
 }
 
-.localizacao iframe { 
+#localizacao iframe { 
   border-radius: 20px;
   box-shadow: 4px 5px 4px 2px rgba(0, 0, 0, 0.4);
 }
 
 /* Foto Apresentação*/
 
-.conteudo-principal-escrito-imagem {
+#conteudo-principal-escrito-imagem {
   display: flex;
   flex-direction: row;
   box-shadow: 5px 6px 5px 0.3em rgba(0, 0, 0, 0.5);
@@ -195,15 +195,15 @@ body {
 
 /* Tipos de produtos da loja */
 
-.conteudo-secundario {
-  margin: 100px auto 122px;
+#conteudo-secundario {
+  margin: 100px auto 70px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
 }
 
-.conteudo-secundario-titulo {
+#conteudo-secundario-titulo {
   border-top: .4px solid #f2e2ce;
   padding-top: 35px;
 
@@ -222,12 +222,12 @@ body {
 
 /* Rodapé */
 
-.rodape {
+#rodape {
   border-top: 0.4px solid #f2e2ce;
   padding: 10px 0px 6px 8px;
 }
 
-.rodape-descricao {
+#rodape-descricao {
   font-family: "Inter", serif;
   font-optical-sizing: auto;
   font-weight: 300;
@@ -237,7 +237,7 @@ body {
 
 /* Menu para celular*/
 
-.cabecalho-menu-responsivo {
+#cabecalho-menu-responsivo {
   background-color: #0000008c;
   backdrop-filter: blur(3px);
   position: absolute;
@@ -250,7 +250,7 @@ body {
   overflow: hidden;
 }
 
-.cabecalho-menu-responsivo a {
+#cabecalho-menu-responsivo a {
   color: #fff;
   text-decoration: none;
   display: block;
@@ -263,7 +263,7 @@ body {
   font-size: 170%;
 }
 
-.cabecalho-menu-responsivo a:hover {
+#cabecalho-menu-responsivo a:hover {
   background-color: #00000080;
   width: 100%;
   border-radius: 2vh;
@@ -305,11 +305,37 @@ body {
   width: 0;
 }
 
+/* Animações de navegação */
+
+.esconder {
+  opacity: 0;
+  filter: blur(10px);
+  transform: translateX(-100%);
+  transition: all 2.2s;
+
+}
+
+.mostrar {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+  transition: all 2.2s;
+}
+
+#instagram {
+  transition-delay: 300ms;
+}
+
+#localizacao {
+  transition-delay: 700ms;
+}
+
+
 /* Tudo só será aplicado em diante, se for menor que 910px */
 
 @media screen and (max-width: 910px) {
   /*Classes Principais*/
-  .conteudo-principal {
+  #conteudo-principal {
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -323,26 +349,26 @@ body {
     gap: 20px;
   }
 */
-  .conteudo-principal-escrito-imagem {
+  #conteudo-principal-escrito-imagem {
     /*order: 1;*/
     width: 100%;
     flex-direction: column;
   }
 
-  .localizacao h3{
+  #localizacao h3{
     font-size: 170%;
     padding: 10px 0 15px 0;
     margin-left: 2px;
   }
 
   /* Antes era a classe conteudo-principal-escrito-botao*/
-  .localizacao iframe{
+  #localizacao iframe{
     /*order: 2;*/
     width: 100%;
     flex-direction: column;
   }
 
-  .conteudo-principal-escrito {
+  #conteudo-principal-escrito {
     margin-right: 3.5vh;
     font-family: "M PLUS Rounded 1c", serif;
     font-weight: 900;
@@ -351,11 +377,11 @@ body {
   }
 
   /*Cabeçalho*/
-  .cabecalho-menu {
+  #cabecalho-menu {
     display: none;
   }
 
-  .cabecalho-menu-responsivo.abrir {
+  #cabecalho-menu-responsivo.abrir {
     visibility: visible;
     height: calc(100vh - 77px);
   }
@@ -364,26 +390,26 @@ body {
     display: block;
   } 
 
-  .conteudo-secundario-titulo {
+  #conteudo-secundario-titulo {
     font-size: 140%;
   }
 
-  .conteudo-no-meio {
+  #conteudo-quaternario {
     flex-wrap: wrap;
     flex-direction: column-reverse;
     width: 100%;
   }
 
-  .instagram {
+  #instagram {
     width: 100%;
     margin-top: 30px;
   }
 
-  .instagram iframe {
+  #instagram iframe {
     width: 100%;
   }
 
-  .localizacao {
+  #localizacao {
     width: 100%;
   }
 }
