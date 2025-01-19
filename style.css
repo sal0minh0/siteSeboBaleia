@@ -17,7 +17,7 @@ body {
   background-color: #a68d85;
   opacity: 1;
   background-image: radial-gradient(#f2e2ce 2px, transparent 2px),
-  radial-gradient(#f2e2ce 2px, #a68d85 2px);
+    radial-gradient(#f2e2ce 2px, #a68d85 2px);
   background-size: 80px 80px;
   background-position: 0 0, 40px 40px;
 }
@@ -38,16 +38,16 @@ body {
 
 #cabecalho-menu {
   display: flex;
-  gap: 30px;
+  justify-content: space-between;
+  gap: 60px;
   font-family: "M PLUS Rounded 1c", serif;
-  font-weight: 400;
+  font-weight: 700;
   font-style: normal;
-  font-size: 130%;
+  font-size: 150%;
 }
 
 .cabecalho-menu-item {
-  text-decoration: none;
-  color: #000000;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 /* Base da Primeira parte da página */
@@ -58,7 +58,7 @@ body {
 }
 
 #conteudo-principal {
-  margin-top: 55px;
+  margin-top: 45px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -67,9 +67,11 @@ body {
 
 #conteudo-principal-escrito {
   margin-left: 3.5vh;
+  margin-bottom: 10px;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
+  color: rgba(0, 0, 0, 0.9);
 }
 
 /*
@@ -83,14 +85,14 @@ body {
 
 /* Apresentação da loja */
 
-#conteudo-principal-escrito-titulo {
+#conteudo-principal-escrito-titulo h1 {
   font-family: "M PLUS Rounded 1c", serif;
-  font-weight: 800;
+  font-weight: 900;
   font-style: normal;
-  font-size: 150%;
+  font-size: 200%;
 }
 
-#conteudo-principal-escrito-subtitulo {
+#conteudo-principal-escrito-subtitulo h3 {
   font-family: "M PLUS Rounded 1c", serif;
   font-weight: 500;
   font-style: normal;
@@ -130,6 +132,7 @@ body {
   background: none;
   align-items: center;
   justify-content: space-around;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 /* Instagram */
@@ -149,7 +152,7 @@ body {
 
 #instagram h3 {
   display: flex;
-  border-top: .4px solid #f2e2ce;
+  border-top: 0.4px solid #f2e2ce;
   justify-self: center;
   padding-top: 5px;
   padding-bottom: 10px;
@@ -170,7 +173,7 @@ body {
 }
 
 #localizacao h3 {
-  border-top: .4px solid #f2e2ce; 
+  border-top: 0.4px solid #f2e2ce;
   padding-top: 5px;
   padding-bottom: 10px;
 
@@ -180,7 +183,7 @@ body {
   font-size: 150%;
 }
 
-#localizacao iframe { 
+#localizacao iframe {
   border-radius: 20px;
   box-shadow: 4px 5px 4px 2px rgba(0, 0, 0, 0.4);
 }
@@ -190,6 +193,9 @@ body {
 #conteudo-principal-escrito-imagem {
   display: flex;
   flex-direction: row;
+/*Ajeitando ao trocar de Resolução da Tela*/
+  width: 100%;
+  max-width: 450px;
   box-shadow: 5px 6px 5px 0.3em rgba(0, 0, 0, 0.5);
 }
 
@@ -201,10 +207,11 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 #conteudo-secundario-titulo {
-  border-top: .4px solid #f2e2ce;
+  border-top: 0.4px solid #f2e2ce;
   padding-top: 35px;
 
   font-family: "M PLUS Rounded 1c", serif;
@@ -248,6 +255,7 @@ body {
   visibility: hidden;
   transition: 1s;
   overflow: hidden;
+  z-index: 1000;
 }
 
 #cabecalho-menu-responsivo a {
@@ -296,12 +304,12 @@ body {
   background-color: rgba(255, 255, 255, 0.8);
 }
 
-#botao-menu-toggle-responsivo.ativo .linha:nth-child(3){
+#botao-menu-toggle-responsivo.ativo .linha:nth-child(3) {
   transform: translateY(-14px) rotate(45deg);
   background-color: rgba(255, 255, 255, 0.8);
 }
 
-#botao-menu-toggle-responsivo.ativo .linha:nth-child(2){
+#botao-menu-toggle-responsivo.ativo .linha:nth-child(2) {
   width: 0;
 }
 
@@ -329,25 +337,61 @@ body {
   transition-delay: 700ms;
 }
 
-/*Ajeitando ao trocar de Resolução da Tela*/
+/* Animação de Digitação */
 
-#foto-responsiva{
-  width: 100%;
-  max-width: 450px;
-  display: block;
-  margin: 0 auto;
+#conteudo-principal-escrito-titulo {
+  width: 0;
+  border-right: 1.5px solid rgba(0, 0, 0, 0.9);
+  white-space: nowrap;
+  overflow: hidden;
 }
 
-/* Animação digitando título e subtítulo */
-
-#conteudo-principal-escrito-titulo, #conteudo-principal-escrito-subtitulo {
-border-right: #000000;
+.animacao-digitando {
+  animation: cursorPiscando 600ms steps(30) infinite normal, 
+  digitando 1s steps(9) .5s forwards normal;
 }
+
+@keyframes digitando {
+  from {
+    width: 0;
+  }
+  to {
+    width: 12em;
+  }
+}
+
+@keyframes cursorPiscando {
+  from {
+    border-right-color: rgba(0, 0, 0, 0.9);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+/*Animação Blur_in-Blur_out */
+.animacao-blur {
+  animation: blur-in-out 2s forwards normal;
+}
+
+@keyframes blur-in-out {
+  from {
+    filter: blur(20px);
+  }
+  to {
+    filter: blur(0);
+  }
+}
+
 
 /* Tudo só será aplicado em diante, se for menor que 910px */
 
-@media screen and (max-width: 910px) {
+@media screen and (max-width: 1160px) {
   /*Classes Principais*/
+  body {
+    margin-top: .45px;
+  }
+
   #conteudo-principal {
     flex-direction: column;
     align-items: center;
@@ -368,14 +412,14 @@ border-right: #000000;
     flex-direction: column;
   }
 
-  #localizacao h3{
+  #localizacao h3 {
     font-size: 170%;
     padding: 10px 0 15px 0;
     margin-left: 2px;
   }
 
   /* Antes era a classe conteudo-principal-escrito-botao*/
-  #localizacao iframe{
+  #localizacao iframe {
     /*order: 2;*/
     width: 100%;
     flex-direction: column;
@@ -401,7 +445,7 @@ border-right: #000000;
 
   #botao-menu-toggle-responsivo {
     display: block;
-  } 
+  }
 
   #conteudo-secundario-titulo {
     font-size: 140%;
@@ -424,8 +468,11 @@ border-right: #000000;
 
   #localizacao {
     width: 100%;
-  }
+  }  
+  #conteudo-principal-escrito {
+    align-items: center; /* Adicione esta linha */
   
+  }
 }
 
 /* estudar esse codigo css e o html tbm*/
