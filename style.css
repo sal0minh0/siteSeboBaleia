@@ -47,7 +47,7 @@ body {
 }
 
 .cabecalho-menu-item {
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.9);
 }
 
 /* Base da Primeira parte da página */
@@ -71,7 +71,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  color: rgba(0, 0, 0, 0.9);
 }
 
 /*
@@ -90,6 +89,7 @@ body {
   font-weight: 900;
   font-style: normal;
   font-size: 200%;
+  color: rgb(0, 0, 0);
 }
 
 #conteudo-principal-escrito-subtitulo h3 {
@@ -97,6 +97,7 @@ body {
   font-weight: 500;
   font-style: normal;
   font-size: 150%;
+  color: rgba(0, 0, 0.9);
 }
 
 /* exemplo de Botão
@@ -132,7 +133,7 @@ body {
   background: none;
   align-items: center;
   justify-content: space-around;
-  color: rgba(0, 0, 0, 0.8);
+  color: rgb(0, 0, 0);
 }
 
 /* Instagram */
@@ -207,7 +208,7 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  color: rgba(0, 0, 0, 0.8);
+  color: rgb(0, 0, 0);
 }
 
 #conteudo-secundario-titulo {
@@ -379,7 +380,8 @@ body {
     filter: blur(20px);
   }
   to {
-    filter: blur(0);
+    filter: blur(0px);
+
   }
 }
 
