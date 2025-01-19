@@ -312,7 +312,6 @@ body {
   filter: blur(10px);
   transform: translateX(-100%);
   transition: all 2.2s;
-
 }
 
 .mostrar {
@@ -330,6 +329,21 @@ body {
   transition-delay: 700ms;
 }
 
+/*Ajeitando ao trocar de Resolução da Tela*/
+
+#foto-responsiva{
+  width: 100%;
+  max-width: 450px;
+  display: block;
+  margin: 0 auto;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Animação digitando título e subtítulo */
+
+#conteudo-principal-escrito-titulo, #conteudo-principal-escrito-subtitulo {
+border-right: #000000;
+}
 
 /* Tudo só será aplicado em diante, se for menor que 910px */
 
@@ -412,6 +426,7 @@ body {
   #localizacao {
     width: 100%;
   }
+  
 }
 
 /* estudar esse codigo css e o html tbm*/
