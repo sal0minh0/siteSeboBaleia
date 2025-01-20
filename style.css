@@ -10,26 +10,32 @@
   text-decoration: none;
 }
 
-/* Scrollbar Para Chrome, Safari, Opera 15+ */
+/* Scrollbar Para o Chrome, Safari, Opera 15+ */
 
-*::-webkit-scrollbar-track {
+html::-webkit-scrollbar-track {
   background-color: #f4f4f4a8;
 }
-*::-webkit-scrollbar {
+html::-webkit-scrollbar {
   width: 10px;
   background: #f4f4f4a8;
 }
-*::-webkit-scrollbar-thumb {
-  background: #acabab;
+html::-webkit-scrollbar-thumb {
+  background: #858585cb;
+}
+
+/* Scrollbar Para o Firefox */
+
+@-moz-document url-prefix() {
+  html {
+    scrollbar-gutter: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #585858ea #f4f4f4a8;
+  }
 }
 
 html {
   scroll-behavior: smooth;
 }
-
-/* Scrollbar Para Firefox */
-
-
 
 /* Fundo da página */
 
