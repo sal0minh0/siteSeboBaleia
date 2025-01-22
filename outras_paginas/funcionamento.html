@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Horários da livraria!"
+    />
+
+    <!--Flavicon-->
+
+    <title>Funcionamento</title>
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <link rel="icon" href="../assets/icon.ico" type="image/x-icon" />
+
+    <!-- Preview do site -->
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Horários do Sebo" />
+    <meta
+      property="og:description"
+      content="Quais os Horários de Funcionamento?"
+    />
+    <meta
+      property="og:image"
+      content="https://sebo-baleia.vercel.app/assets/imagem-de-preview.jpg"
+    />
+    <meta property="locale" content="pt_BR" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:url" content="https://sebo-baleia.vercel.app/" />
+  </head>
+
+  <!-- Fim do Head-->
+
+  <body>
+    <!--1-->
+    <header id="cabecalho">
+      <img
+        id="cabecalho-imagem"
+        src="../assets/logo.jpg"
+        width="300px"
+        alt="Logo do Sebo"
+      />
+
+      <nav id="cabecalho-menu">
+        <a class="cabecalho-menu-item" href="../index.html">HOME</a>
+        <a class="cabecalho-menu-item" href="sobre.html">SOBRE</a>
+        <a class="cabecalho-menu-item" href="../index.html#conteudo-terciario">ESTANTE VIRTUAL</a>
+        <a class="cabecalho-menu-item" href="contato.html">CONTATO</a>
+        <a class="cabecalho-menu-item" href="funcionamento.html">FUNCIONAMENTO</a>
+      </nav>
+
+      <button id="botao-menu-toggle-responsivo" onclick="animarMenu()">
+        <span class="linha"></span>
+        <span class="linha"></span>
+        <span class="linha"></span>
+      </button>
+
+      <nav id="cabecalho-menu-responsivo">
+        <a class="cabecalho-menu-item" href="../index.html">HOME</a>
+        <a class="cabecalho-menu-item" href="sobre.html">SOBRE</a>
+        <a class="cabecalho-menu-item" href="../index.html#conteudo-terciario">ESTANTE VIRTUAL</a>
+        <a class="cabecalho-menu-item" href="contato.html">CONTATO</a>
+        <a class="cabecalho-menu-item" href="funcionamento.html">FUNCIONAMENTO</a>
+      </nav>
+    </header>
+
+    <!--2-->
+    <main id="conteudo">
+      
+      <section id="conteudo-principal">
+        <div id="conteudo-principal-escrito">
+
+          <div id="conteudo-principal-escrito-titulo" class="animacao-digitando">
+          <h1>Funcionamento</h1> <!--Vou usar a mesma animação -> vou ter que criar 3 animacao-digitando -->
+        </div>
+
+        <div id="conteudo-principal-escrito-subtitulo" class="animacao-blur">
+          <h3>
+            Manhã: X:XX h - X:XX h 
+          </h3>
+          <h3>
+            <p>
+            Tarde: X:XX h - X:XX h
+          </p>
+          </h3>
+        </div>
+          <!--Melhorar-->
+        </div>
+        <img
+          id="conteudo-principal-escrito-imagem"
+          class="esconder"
+          src="../assets/3652191.png"
+          width="512px"
+          height="358px"
+          alt="Foto Funcionamento"
+        />
+      </section>
+
+    <!--3-->
+    <footer id="rodape">
+      <h4 id="rodape-descricao">Sebo Baleia - Copyright © "Ano XX-XX"</h4>
+    </footer>
+
+    <!-- Ativar o botão responsivo -->
+    <script src="../scripts/animar.js"></script>
+    <!-- Animação de navegação da página-->
+    <script src="../scripts/navegacao.js"></script>
+  </body>
+  <!--Fim do Body-->
+</html>
+

@@ -80,12 +80,12 @@ body {
 /* Base da Primeira parte da página */
 
 #conteudo {
-  margin-bottom: 40px;
   border-top: 0.4px solid #f2e2ce;
 }
 
 #conteudo-principal {
   margin-top: 45px;
+  margin-bottom: 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -155,6 +155,7 @@ body {
 /* Classe pai do Instagram + GMaps */
 
 #conteudo-quaternario {
+  margin-bottom: 40px;
   display: flex;
   flex-direction: row;
   background: none;
