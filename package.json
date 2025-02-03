@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/sal0minh0/siteSeboBaleia#readme",
   "dependencies": {
+    "express": "^4.21.2",
     "mongodb": "^6.13.0"
   }
 }
