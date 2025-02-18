@@ -7,3 +7,5 @@ outras_paginas/novoslivros.html
 scripts/index.js
 
 *.json
+
+node_modules/
