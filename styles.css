@@ -248,6 +248,11 @@ td {
   color: rgba(255, 0, 0, 0.8);
 }
 
+.contato {
+  color: rgba(0, 0, 255, 0.9);
+  padding: 0.5rem;
+}
+
 
 /* Rodapé */
 
@@ -531,5 +536,9 @@ td {
   }
   #rodape-descricao {
     font-size: 68%;
+  }
+
+  #whatsapp {
+    display: grid;
   }
 }
