@@ -254,6 +254,7 @@ td {
 #rodape {
   border-top: 0.4px solid #f2e2ce;
   padding: 10px 0px 6px 8px;
+  justify-content: flex-start;
 }
 
 #rodape-descricao {
@@ -524,7 +525,11 @@ td {
   #conteudo-principal-escrito {
     align-items: center; 
   }
+  #rodape {
+    display: flex;
+    justify-content: space-around;
+  }
   #rodape-descricao {
-    font-size: 72%
+    font-size: 68%;
   }
 }
