@@ -523,6 +523,8 @@ td {
   }  
   #conteudo-principal-escrito {
     align-items: center; 
-  
+  }
+  #rodape-descricao {
+    font-size: 72%
   }
 }
