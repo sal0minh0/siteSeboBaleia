@@ -562,5 +562,9 @@ td {
 
   .conteudo-principal-sobre img {
     margin-right: 0;
+    
+  }
+  .sobre {
+    font-size: 70%;
   }
 }
