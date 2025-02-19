@@ -194,6 +194,7 @@ body {
   width: 100%;
   max-width: 450px;
   box-shadow: 5px 6px 5px 0.3em rgba(0, 0, 0, 0.5);
+  border-radius: 0.7rem;
 }
 
 /* Tipos de produtos da loja */
