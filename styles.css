@@ -268,7 +268,7 @@ td {
   display: grid;
 }
 
-#conteudo-principal-escrito-imagem {
+.conteudo-principal-sobre img {
   margin-right: 3rem;
 }
 
@@ -558,5 +558,9 @@ td {
 
   #whatsapp {
     display: grid;
+  }
+
+  .conteudo-principal-sobre img {
+    margin-right: 0;
   }
 }
