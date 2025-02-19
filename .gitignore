@@ -4,8 +4,4 @@ outras_paginas/novoslivros.html
 
 scripts/index.js
 
-node_modules/
-
 *.json
-
-.env
