@@ -253,6 +253,24 @@ td {
   padding: 0.5rem;
 }
 
+.sobre {
+  font-weight: 300;
+  font-size: 90%;
+  width: 95%;
+  margin: 0 0 1rem;
+}
+
+.sobre a {
+  color: rgba(0, 0, 255, 0.9);
+}
+
+#conteudo-principal-escrito-subtitulo{
+  display: grid;
+}
+
+#conteudo-principal-escrito-imagem {
+  margin-right: 3rem;
+}
 
 /* Rodapé */
 
