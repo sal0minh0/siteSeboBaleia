@@ -8,11 +8,18 @@
       content="Uma livraria muito especial no meio do centro do Recife!"
     />
 
-    <!--Flavicon-->
+    <!--Favicon-->
 
     <title>Sebo Baleia</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <link rel="icon" href="assets/icon.ico" type="image/x-icon" />
+
+    <!-- Icones -->
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
 
     <!-- Preview do site -->
 
@@ -154,6 +161,8 @@
       </div>
     </main>
 
+    <button id="flutuante" class="btn-flutuante" onclick="irAoTopo()"><i class='bx bxs-up-arrow' ></i></button>
+
     <!--3-->
     <footer id="rodape">
       <h4 id="rodape-descricao">Sebo Baleia - Copyright &copy; 2002-<span id="ano"></span> - Todos os Direitos Reservados</h4>
@@ -164,7 +173,9 @@
     <!-- Animação de navegação da página-->
     <script src="scripts/navegacao.js"></script>
     <!-- Ano atual -->
-    <script src="../scripts/anoatualrodape.js"></script>
+    <script src="scripts/anoatualrodape.js"></script>
+    <!-- Ir ao Topo -->
+     <script src="../scripts/botaoflutuante.js"></script>
   </body>
   <!--Fim do Body-->
 </html>
