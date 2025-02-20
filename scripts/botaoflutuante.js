@@ -10,10 +10,12 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("scroll", function () {
     let primeiraSecao = document.getElementById("conteudo-principal");
     let conteudoSecundario = document.getElementById("conteudo-secundario");
+    let conteudoSecundarioMobile = document.getElementById("conteudo-secundario-mobile");
     let botao = document.getElementById("flutuante");
 
     let primeiraSecaoBottom = primeiraSecao.getBoundingClientRect().bottom;
     let conteudoSecundarioTop = conteudoSecundario.getBoundingClientRect().top;
+    let conteudoSecundarioMobileTop = conteudoSecundarioMobile.getBoundingClientRect().top;
     let windowHeight = window.innerHeight;
 
     // Se a primeira seção ainda estiver visível, esconde o botão
@@ -21,7 +23,7 @@ document.addEventListener("scroll", function () {
         botao.style.display = "none";
     } 
     // Quando o "conteúdo secundário" aparece na tela, mostra o botão
-    else if (conteudoSecundarioTop < windowHeight) {
+    else if (conteudoSecundarioTop < windowHeight || conteudoSecundarioMobileTop < windowHeight) {
         botao.style.display = "block";
     }
 });
