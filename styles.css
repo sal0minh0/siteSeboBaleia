@@ -531,6 +531,10 @@ td {
   }
 }
 
+.conteudo-contato section {
+  margin-top: -20px;
+}
+
 /* Tudo só será aplicado em diante, se for menor que 1160px */
 
 @media screen and (max-width: 1160px) {
