@@ -617,8 +617,8 @@ td {
 
   .conteudo-principal-sobre img {
     margin-right: 0;
-    
   }
+
   .sobre {
     font-size: 70%;
   }
@@ -634,4 +634,36 @@ td {
   #conteudo-secundario-titulo-mobile {
     font-size: 120%;
   }
+}
+
+@media (min-width: 1366px) and (min-height: 768px) {
+  #conteudo-principal {
+    display: grid;
+  }
+
+  .principal-home img {
+    margin-top: 1rem;
+    margin-left: 12rem;
+  }
+
+  .conteudo-principal-sobre img {
+    margin-top: 2rem;
+    margin-left: 44rem;
+  }
+
+  .conteudo-escrito-contato {
+    margin-top: 2.5rem;
+  }
+  
+  .conteudo-contato img {
+    margin-top: 10rem;
+  }
+
+  .conteudo-funcionamento img {
+    margin-top: 1rem;
+  }
+  
+  footer {
+    flex-shrink: 0;
+}
 }
